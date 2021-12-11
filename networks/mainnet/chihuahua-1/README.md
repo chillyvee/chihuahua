@@ -63,7 +63,9 @@ chihuahuad keys add <key-name> --recover
 ```
 
 ### Set minimum gas fees
+```
 perl -i -pe 's/^minimum-gas-prices = .+?$/minimum-gas-prices = "0.025uhuahua"/' ~/.chihuahua/config/app.toml
+```
 
 ## Instructions for Genesis Validators
 
