@@ -6,7 +6,7 @@
 
 The following are necessary to build chihuahua from source. 
 
-#### 1. Basic Packages
+#### Basic Packages
 ```bash:
 # update the local package list and install any available upgrades 
 sudo apt-get update && sudo apt upgrade -y 
@@ -14,7 +14,7 @@ sudo apt-get update && sudo apt upgrade -y
 sudo apt-get install make build-essential gcc git jq chrony -y
 ```
 
-#### 2. Install Go
+#### Install Go
 Follow the instructions [here](https://golang.org/doc/install) to install Go.
 
 Alternatively, for Ubuntu LTS, you can do:
@@ -39,7 +39,7 @@ Output should be: `go version go1.17.3 linux/amd64`
 
 ### Install Chihuahua from source
 
-#### 1. Clone repository
+#### Clone repository
 ```bash:
 git clone https://github.com/ChihuahuaChain/chihuahua.git
 cd chihuahua
@@ -61,6 +61,9 @@ chihuahuad keys add <key-name>
 # You will be prompted to enter mnemonic seed. 
 chihuahuad keys add <key-name> --recover
 ```
+
+### Set minimum gas fees
+perl -i -pe 's/^minimum-gas-prices = .+?$/minimum-gas-prices = "0.025uhuahua"/' ~/.chihuahua/config/app.toml
 
 ## Instructions for Genesis Validators
 
