@@ -88,9 +88,6 @@ import (
 
 	"github.com/ChihuahuaChain/chihuahua/docs"
 
-	chihuahuamodule "github.com/ChihuahuaChain/chihuahua/x/chihuahua"
-	chihuahuamodulekeeper "github.com/ChihuahuaChain/chihuahua/x/chihuahua/keeper"
-	chihuahuamoduletypes "github.com/ChihuahuaChain/chihuahua/x/chihuahua/types"
 	// this line is used by starport scaffolding # stargate/app/moduleImport
 )
 
